@@ -9,16 +9,6 @@
 		{
 			"name": "register",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NjkwODIwMjYsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iLCJVU0VSUyJdLCJleHAiOjE2NjkxNjg0MjZ9.WeLBpMN5olM6yDwo3PGdaNj9Zlbdd-sXYntT36cSgQfoczRYqxBvpG4UKt7Lo3Nkn9CRvTAjTJT3lTmUUc1zDQ",
-							"type": "string"
-						}
-					]
-				},
 				"method": "POST",
 				"header": [],
 				"body": {

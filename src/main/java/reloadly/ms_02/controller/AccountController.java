@@ -13,7 +13,8 @@ import java.util.List;
 @RestController
 public class AccountController {
 
-    protected String baseUrl = "http://localhost:4000/api/";
+    protected String baseUrl = "http://account-services/"; // localhost:4000/api/
+
     protected HttpHeaders headers = new HttpHeaders();
 
     @Autowired
@@ -21,8 +22,10 @@ public class AccountController {
 
     @PostConstruct()
     public void authentification() {
-        Account account = this.findByName("admin");
-        String token = account.getToken();
+//        Account account = this.findByName("admin");
+//        String token = account.getToken();
+        String token = "eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2NjkwODIwMjYsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiQURNSU4iLCJVU0VSUyJdLCJleHAiOjE2NjkxNjg0MjZ9.WeLBpMN5olM6yDwo3PGdaNj9Zlbdd-sXYntT36cSgQfoczRYqxBvpG4UKt7Lo3Nkn9CRvTAjTJT3lTmUUc1zDQ";
+
 
         headers.add("Authorization", "Bearer " + token);
     }
